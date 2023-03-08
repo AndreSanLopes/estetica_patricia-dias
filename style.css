@@ -1,0 +1,91 @@
+/*
+FONTES: Lato, Roboto
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+VARIÁVEIS:
+*/
+:root{
+    --texto-default: #0e0e0e;
+    --texto-opaco: #0e0e0eab;
+    --fundo-claro: #e89eff;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: Lato, Roboto;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--texto-opaco);
+}
+
+/*
+header
+*/
+#cab{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.4%;
+    background-color: var(--fundo-claro);
+}
+
+/*
+nav
+*/
+#barra_sup{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+#barra_sup li{
+    margin-left: 12px;
+}
+
+#barra_sup li a{
+    display: block;
+}
+
+/*
+main
+*/
+
+/*
+footer
+*/
