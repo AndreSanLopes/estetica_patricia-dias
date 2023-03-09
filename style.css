@@ -5,6 +5,19 @@ FONTES: Lato, Roboto
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
+/*
+VARIÁVEIS:
+*/
+:root {
+    --texto-default: #0e0e0e;
+    --texto-opaco: #0e0e0eab;
+    --fundo-claro: #e89eff;
+    --fundo-claro-bege: #FFDF9E;
+}
+
+/*
+DEFINIÇÕES GLOBAIS
+*/
 * {
     margin: 0;
     padding: 0;
@@ -19,15 +32,6 @@ FONTES: Lato, Roboto
     padding: 0;
 }
 
-/*
-VARIÁVEIS:
-*/
-:root{
-    --texto-default: #0e0e0e;
-    --texto-opaco: #0e0e0eab;
-    --fundo-claro: #e89eff;
-}
-
 html,
 body {
     width: 100vw;
@@ -36,24 +40,56 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body{
+body {
     font-size: 1.2rem;
     font-family: Lato, Roboto;
+    word-wrap: break-word;
 }
 
-ul, li{
+ul,
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--texto-opaco);
 }
 
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+/*
+container
+#container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+*/
+
 /*
 header
 */
-#cab{
+#cab {
+    min-width: 100vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -61,30 +97,88 @@ header
     justify-content: space-between;
 
     padding: 1.4%;
-    background-color: var(--fundo-claro);
+    background-color: var(--fundo-claro-bege);
+}
+
+#logoIcon{
+    color: var(--fundo-claro)
 }
 
 /*
 nav
 */
-#barra_sup{
+#barra_sup {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
 
-#barra_sup li{
+#barra_sup li {
     margin-left: 12px;
 }
 
-#barra_sup li a{
+#barra_sup li a {
     display: block;
 }
 
 /*
 main
 */
+main {
+    display: block;
+
+}
+
+/*
+section
+*/
+.image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.image.int{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-position: 65% 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.image.int.parallax{
+    background-image: url(assets/img/estetica_trat.jpg);
+}
+
+/*
+DEFINE TEXTOS ENTRE O PARALLAX
+*/
+section.image.txt {
+    background-color: var(--fundo-claro-bege);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+section.image h3 {
+    color: var(--texto-default);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+section p {
+    letter-spacing: 0.5vh;
+    margin-bottom: 5%;
+}
 
 /*
 footer
