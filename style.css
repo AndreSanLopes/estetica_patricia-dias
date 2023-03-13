@@ -127,7 +127,6 @@ main
 */
 main {
     display: block;
-
 }
 
 /*
@@ -154,8 +153,16 @@ section.image.int{
     -o-background-size: cover;
 }
 
-section.image.int.parallax{
+section.image.int.parallax-1{
     background-image: url(assets/img/estetica_trat.jpg);
+}
+
+section.image.int.parallax-2{
+    background-image: url(assets/img/cremes_estet.jpg);
+}
+
+section.image.int.parallax-3{
+    background-image: url(assets/img/woman_beauty.jpg)
 }
 
 /*
