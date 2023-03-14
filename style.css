@@ -86,40 +86,27 @@ container
 */
 
 /*
-header
+BOTÕES
 */
-#cab {
-    min-width: 100vw;
+
+button{
+    text-align: center;
+}
+
+#top{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 1.4%;
-    background-color: var(--fundo-claro-bege);
-}
-
-#logoIcon{
-    color: var(--fundo-claro)
-}
-
-/*
-nav
-*/
-#barra_sup {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-}
-
-#barra_sup li {
-    margin-left: 12px;
-}
-
-#barra_sup li a {
-    display: block;
+    align-content: center;
+    /*align-items: center;*/
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: var(--fundo-claro);
+    cursor: pointer;
+    border: transparent 0 solid;
+    border-radius: 32px;
+    z-index: 1;
 }
 
 /*
@@ -137,7 +124,7 @@ section
     margin: 0 auto;
 }
 
-section.image.int{
+section.image.int {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,15 +140,15 @@ section.image.int{
     -o-background-size: cover;
 }
 
-section.image.int.parallax-1{
+section.image.int.parallax-1 {
     background-image: url(assets/img/estetica_trat.jpg);
 }
 
-section.image.int.parallax-2{
-    background-image: url(assets/img/cremes_estet.jpg);
+section.image.int.parallax-2 {
+    background-image: url(assets/img/leaves.jpg);
 }
 
-section.image.int.parallax-3{
+section.image.int.parallax-3 {
     background-image: url(assets/img/woman_beauty.jpg)
 }
 
