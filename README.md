@@ -1,6 +1,7 @@
 # Estética Avançada - Patrícia Dias
 ***
 🏗️ *em desenvolvimento* 🏗️
+(Log-in opcional)
 
 Site construído com HTML, CSS e vanilla JavaScript
 
