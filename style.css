@@ -12,8 +12,9 @@ VARIÁVEIS:
     --texto-default: #0e0e0e;
     --texto-opaco: #0e0e0eab;
     --fundo-claro: #e89eff;
-    --fundo-claro-bege: #FFDF9E;
+    --dourado: #ffb829;
     --texto-tit: #2AC9F5;
+    --gelo: #ddd9ce;
 }
 
 /*
@@ -37,7 +38,7 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    background-color: var(--fundo-claro-bege);
+    background-color: var(--gelo);
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -63,14 +64,16 @@ img {
 }
 
 h1 {
-    color: #f5f5f5;
+    color: var(--dourado);
     font-size: 64px;
     cursor: context-menu;
+    text-shadow: var(--texto-default) 0.5px 1.5px 3px;
+    text-transform: uppercase;
 }
 
 h2 {
+    color: var(--texto-opaco);
     font-size: 56px;
-    text-transform: uppercase;
     cursor: context-menu;
 }
 
@@ -100,6 +103,10 @@ BOTÕES
 */
 
 button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    cursor: pointer;
     text-align: center;
 }
 
@@ -108,7 +115,6 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    /*align-items: center;*/
     width: 60px;
     height: 60px;
     position: absolute;
@@ -134,9 +140,28 @@ section
     margin: 0 auto;
 }
 
+section button {
+    padding: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 12px;
+    border: transparent 1.5px solid;
+    font-size: 1.2rem;
+}
+
+#btSection{
+    background-color: white;
+}
+
+#btSection:hover {
+    transition-duration: 0.2s;
+    box-shadow: var(--texto-default) 1.5px 3px 3px;
+}
+
 section.image.int {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh !important;
@@ -168,7 +193,13 @@ section.image.int.parallax-3 {
 DEFINE TEXTOS ENTRE O PARALLAX
 */
 section.image.txt {
-    background-color: var(--fundo-claro-bege);
+    background-color: var(--gelo)
+        /*var(--fundo-claro-bege)*/
+    ;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 16px;
@@ -195,7 +226,7 @@ footer
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-image: linear-gradient(to bottom, #FFB4FF, #e7e7e7);
+    background-image: linear-gradient(to bottom, #FFB4FF, var(--gelo));
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
