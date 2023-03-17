@@ -35,5 +35,9 @@ function espac() {
 
 }
 
+function acaoAgend(){
+    alert(`Recurso indisponível no momento`)
+}
+
 /*var teste = document.querySelector("p#escreve")
 teste.innerHTML += `<br>TESTE 1, 2, 3`*/
