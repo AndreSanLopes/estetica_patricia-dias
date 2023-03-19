@@ -99,18 +99,6 @@ footer p {
 }
 
 /*
-BOTÕES
-*/
-
-button {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    cursor: pointer;
-    text-align: center;
-}
-
-/*
 BOTÃO DE VOLTAR AO TOPO
 */
 #top {
@@ -129,6 +117,26 @@ BOTÃO DE VOLTAR AO TOPO
 }
 
 /*
+RESPONSIVIDADE
+*/
+@media screen and (max-width: 720px) {
+    section.image.int {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.image.txt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rod {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*
 main
 */
 main {
@@ -144,15 +152,27 @@ section
 }
 
 section button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
     width: 112px;
     height: 50px;
     padding: 8px;
-    margin-left: 48px; /*ESPAÇAMENTO DA GRID*/
+    margin-left: 48px;
+    /*ESPAÇAMENTO DA GRID*/
     margin-right: 16px;
     border-radius: 12px;
     border: transparent 1.5px solid;
+    /*font-size: 1.2rem;*/
+    background-color: var(--gelo);
+}
+
+section button p {
     font-size: 1.2rem;
-    background-color: var(--gelo);  
+    letter-spacing: normal;
 }
 
 section button:hover {
