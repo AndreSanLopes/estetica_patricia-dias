@@ -13,6 +13,7 @@ VARIÁVEIS:
     --texto-opaco: #0e0e0eab;
     --fundo-claro: #e89eff;
     --dourado: #ffb829;
+    --dourado-opaco: #ffb829d8;
     --texto-tit: #2AC9F5;
     --gelo: #ddd9ce;
 }
@@ -64,10 +65,10 @@ img {
 }
 
 h1 {
-    color: var(--dourado);
+    color: rgba(255, 255, 255, 0.884);
     font-size: 64px;
     cursor: context-menu;
-    text-shadow: var(--texto-default) 0.5px 1.5px 3px;
+    text-shadow: var(--fundo-claro) 2.5px 5px;
     text-transform: uppercase;
 }
 
