@@ -55,6 +55,10 @@ li {
     list-style: none;
 }
 
+li {
+    margin-bottom: 8px;
+}
+
 a {
     text-decoration: none;
     color: var(--texto-default);
@@ -65,7 +69,10 @@ img {
 }
 
 h1 {
-    color: rgba(255, 255, 255, 0.884);
+    display: flex;
+    justify-content: center;
+
+    color: #ffffffe1;
     font-size: 64px;
     cursor: context-menu;
     text-shadow: var(--fundo-claro) 2.5px 5px;
@@ -82,6 +89,21 @@ h3 {
     font-size: 48px;
     font-weight: lighter;
     cursor: context-menu;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--texto-opaco);
+    letter-spacing: -0.2vh;
+}
+
+h4:hover{
+    transition-duration: 0.5s;
+    color: var(--texto-default);
+    text-shadow: var(--fundo-claro) 1px 2px 1px;
 }
 
 /*
@@ -159,26 +181,28 @@ section button {
     justify-content: center;
     cursor: pointer;
     text-align: center;
-    width: 112px;
-    height: 50px;
+    width: 145px;
+    height: 48px;
     padding: 8px;
-    margin-left: 48px;
+    margin-left: 36px;
     /*ESPAÇAMENTO DA GRID*/
     margin-right: 16px;
     border-radius: 12px;
-    border: transparent 1.5px solid;
+    border: white 2px solid;
     /*font-size: 1.2rem;*/
-    background-color: var(--gelo);
+    background-color: var(--fundo-claro);
 }
 
 section button p {
     font-size: 1.2rem;
     letter-spacing: normal;
+    color: white;
 }
 
 section button:hover {
-    transition-duration: 0.2s;
-    box-shadow: var(--texto-default) 1.5px 3px 3px;
+    transition-duration: 0.3s;
+    border-radius: 0px;
+    /*box-shadow: var(--fundo-claro) 1.5px 3px 3px;*/
 }
 
 section.image.int {
@@ -203,7 +227,7 @@ grid
 #containerSection {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     row-gap: 16px;
 }
 
@@ -217,21 +241,28 @@ TÍTULO NA PARTE DE CIMA
     grid-row-end: 2;
 }
 
+#subTit{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 /*
 BOTÕES LADO A LADO
 */
 #btSection-1 {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 #btSection-2 {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 section.image.int.parallax-1 {
@@ -253,9 +284,7 @@ section.image.int.parallax-3 {
 DEFINE TEXTOS ENTRE O PARALLAX
 */
 section.image.txt {
-    background-color: var(--gelo)
-        /*var(--fundo-claro-bege)*/
-    ;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     align-content: center;

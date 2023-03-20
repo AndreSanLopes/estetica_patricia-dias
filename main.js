@@ -13,8 +13,8 @@ window.onload = addEventListener("scroll", Topo => {
 
 var titH3 = document.querySelector("h3#titTxt")
 
-function voltarTop(){
-    window.scrollTo(0,0)
+function voltarTop() {
+    window.scrollTo(0, 0)
 }
 
 /*
@@ -35,7 +35,7 @@ function espac() {
 
 }
 
-function acaoAgend(){
+function acaoAgend() {
     alert(`Recurso indisponível no momento`)
 }
 
