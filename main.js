@@ -24,7 +24,7 @@ letter-spacing: -0.5vh;
 function espac() {
     var espacamento = `
     .image h3:hover{
-        letter-spacing: -0.5vh;
+        letter-spacing: normal;
         transition-duration: 0.2s;
     }
     ` //NOVOS PARÂMETROS CSS
