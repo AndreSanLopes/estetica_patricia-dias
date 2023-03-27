@@ -71,7 +71,6 @@ img {
 h1 {
     display: flex;
     justify-content: center;
-
     color: #ffffffe1;
     font-size: 64px;
     cursor: context-menu;
@@ -100,7 +99,7 @@ h4 {
     letter-spacing: -0.2vh;
 }
 
-h4:hover{
+h4:hover {
     transition-duration: 0.5s;
     font-size: 36px;
     /*color: var(--fundo-claro);*/
@@ -132,7 +131,7 @@ BOTÃO DE VOLTAR AO TOPO
     align-content: center;
     width: 60px;
     height: 60px;
-    position: absolute;
+    position: fixed;
     background-color: var(--fundo-claro);
     cursor: pointer;
     border: transparent 0 solid;
@@ -242,7 +241,7 @@ TÍTULO NA PARTE DE CIMA
     grid-row-end: 2;
 }
 
-#subTit{
+#subTit {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
