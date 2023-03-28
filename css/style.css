@@ -39,7 +39,7 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    background-color: var(--gelo);
+    background-color: #ffffffe1;
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
 }
