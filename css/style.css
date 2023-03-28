@@ -266,17 +266,17 @@ BOTÕES LADO A LADO
 }
 
 section.image.int.parallax-1 {
-    background-image: url(assets/img/estetica_trat.jpg);
+    background-image: url(/assets/img/estetica_trat.jpg);
     image-rendering: optimizeQuality;
 }
 
 section.image.int.parallax-2 {
-    background-image: url(assets/img/leaves.jpg);
+    background-image: url(/assets/img/leaves.jpg);
     image-rendering: optimizeQuality;
 }
 
 section.image.int.parallax-3 {
-    background-image: url(assets/img/woman_beauty.jpg);
+    background-image: url(/assets/img/woman_beauty.jpg);
     image-rendering: optimizeQuality;
 }
 

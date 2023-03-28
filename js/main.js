@@ -35,6 +35,10 @@ function espac() {
 
 }
 
+function info(){
+    window.scrollTo(0, 350)
+}
+
 function acaoAgend() {
     alert(`Recurso indisponível no momento`)
 }
