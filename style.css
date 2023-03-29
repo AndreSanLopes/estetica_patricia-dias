@@ -140,26 +140,6 @@ BOTÃO DE VOLTAR AO TOPO
 }
 
 /*
-RESPONSIVIDADE
-*/
-@media screen and (max-width: 720px) {
-    section.image.int {
-        display: flex;
-        flex-direction: column;
-    }
-
-    section.image.txt {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #rod {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-/*
 main
 */
 main {
@@ -371,4 +351,24 @@ TEXTO RODAPÉ
 
 #txtRod-4 a:hover {
     color: var(--texto-default);
+}
+
+/*
+RESPONSIVIDADE
+*/
+@media screen and (max-width: 720px) {
+    section.image.int {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.image.txt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rod {
+        display: flex;
+        flex-direction: column;
+    }
 }
