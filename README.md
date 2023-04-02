@@ -1,4 +1,5 @@
 # Estética Avançada - Patrícia Dias
+![Logo_Empresa](https://github.com/AndreSanLopes/estetica_patricia-dias/blob/main/assets/img/estet_patydias.jpg)
 ***
 🏗️ *em desenvolvimento* 🏗️
 (Log-in opcional)
